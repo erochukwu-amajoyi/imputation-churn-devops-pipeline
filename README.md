@@ -5,7 +5,7 @@ This project demonstrates a production-oriented machine learning pipeline for ha
 
 The project compares multiple imputation strategies including statistical, neighbour-based, iterative, and machine-learning-based approaches.
 
-##System Architecture
+## System Architecture
 
 User/Data Upload
         │
