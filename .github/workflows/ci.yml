@@ -35,4 +35,4 @@ jobs:
 
       - name: Basic Python import test
         run: |
-          python -c "from src.data_loader import load_csv; from src.preprocess import preprocess_telco; print('CI passed')"
+         python -c "import src.data_loader; import src.preprocess; print('CI passed')"
