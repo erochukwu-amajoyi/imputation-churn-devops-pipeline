@@ -1,0 +1,38 @@
+name: CI Pipeline
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  basic-checks:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Verify app file exists
+        run: |
+          test -f api/app.py
+
+      - name: Verify source files exist
+        run: |
+          test -f src/data_loader.py
+          test -f src/preprocess.py
+          test -f src/imputers.py
+          test -f src/evaluate.py
+
+      - name: Basic Python import test
+        run: |
+          python -c "from src.data_loader import load_csv; from src.preprocess import preprocess_telco; print('CI passed')"
