@@ -5,6 +5,31 @@ This project demonstrates a production-oriented machine learning pipeline for ha
 
 The project compares multiple imputation strategies including statistical, neighbour-based, iterative, and machine-learning-based approaches.
 
+User/Data Upload
+        │
+        ▼
+     API Layer (Flask)
+        │
+        ▼
+   Data Loader
+        │
+        ▼
+   Preprocessing
+        │
+        ▼
+   Imputation Methods
+   ├─ Median
+   ├─ KNN
+   ├─ MICE
+   └─ Random Forest
+        │
+        ▼
+   Evaluation Metrics
+   ├─ MAPE
+   ├─ RMSPE
+   └─ F1 Score
+
+
 ## Dataset
 Telco Customer Churn Dataset
 
