@@ -7,7 +7,7 @@ The project compares multiple imputation strategies including statistical, neigh
 
 ## System Architecture
 
-User/Data Upload│API Layer (Flask)│Data Loader│Preprocessing│Imputation Methods(Median,KNN,MICE,Random Forest)│Evaluation Metrics(MAPE,RMSPE,F1 Score)
+User/Data Upload│API Layer (Flask)│Data Loader│Preprocessing│Imputation Methods(Median, KNN, MICE, Random Forest)│Evaluation Metrics(MAPE, RMSPE, F1 Score)
 
 
 ## Dataset
