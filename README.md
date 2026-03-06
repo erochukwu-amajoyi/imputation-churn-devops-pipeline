@@ -9,23 +9,18 @@ The project compares multiple imputation strategies including statistical, neigh
 
 User/Data Upload
         │
-        ▼
      API Layer (Flask)
         │
-        ▼
    Data Loader
         │
-        ▼
    Preprocessing
         │
-        ▼
    Imputation Methods
    ├─ Median
    ├─ KNN
    ├─ MICE
    └─ Random Forest
         │
-        ▼
    Evaluation Metrics
    ├─ MAPE
    ├─ RMSPE
