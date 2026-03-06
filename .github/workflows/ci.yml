@@ -33,6 +33,6 @@ jobs:
           test -f src/imputers.py
           test -f src/evaluate.py
 
-      - name: Basic Python import test
+      - name: Basic Python module import test
         run: |
-         python -c "import src.data_loader; import src.preprocess; print('CI passed')"
+          python -c "import src.data_loader; import src.preprocess; import src.imputers; import src.evaluate; print('CI passed')"
